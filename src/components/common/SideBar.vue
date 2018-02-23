@@ -1,13 +1,12 @@
 <template>
     <div class="sidebar">
+        <!-- on-select选择菜单Menu时候触发 -->
         <Menu :theme="color" :active-name="activeName" @on-select="change">
             <MenuGroup title="张阳日常练习" style='background:#495060;width: 242px;'>
                 <MenuItem name="日期">
-                <Icon type="document-text"></Icon>
                 日期
                 </MenuItem>
                 <MenuItem name="搜索">
-                <Icon type="chatbubbles"></Icon>
                 搜索
                 </MenuItem>
             </MenuGroup>
@@ -19,7 +18,8 @@ export default {
   data() {
     return {
       color: "dark",
-      activeName: ""
+    // activeName为了激活菜单的name值
+      activeName: "",
     };
   },
   watch: {
