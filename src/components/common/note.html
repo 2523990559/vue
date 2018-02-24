@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  1.javaScript中的数据类型有 字符串（String） 数字（Number） 数组（Array） 对象（Object） 空（Null） 未定义（Undefined）
+  2.作用域可访问变量的集合
+    对象和函数同样是变量
+    作用域为可访问变量、对象、函数的集合
+    
+  <p>简单计算器:</p>
+  <table border="1" style="position:center;">
+    <tr>
+      <td>第一个数：</td>
+      <td>
+        <input type="text" id="first" />
+      </td>
+    </tr>
+    <tr>
+      <td>第二个数：</td>
+      <td>
+        <input type="text" id="twice" />
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        &nbsp;
+        <button style="width:inherit" onclick="add()">+</button>
+        &nbsp;
+        <button style="width:inherit" onclick="subtract()">-</button>
+        &nbsp;
+        <button style="width:inherit" onclick="ride()">*</button>
+        &nbsp;
+        <button style="width:inherit" onclick="devide()">/</button>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" rowspan="2">
+        <p id="result"></p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+<script>
+    var result_1;
+    function add(){
+        var a=getFirst();
+        var b=getTwice();
+        var c=Number(a)+Number(b);
+        result(c);
+    }
+    function add1(){
+        var a=getFirst();
+        var b=getTwice();
+        var c=a-b;
+        result(c);
+    }
+    function add2(){
+        var a=getFirst();
+        var b=getTwice();
+        var c=a*b;
+        result(c);
+    }
+    function add3(){
+        var a=getFirst();
+        var b=getTwice();
+        var c=a/b;
+        result(c);
+    }
+    //给p标签传值
+    function result(result_1){
+        var num=document.getElementById('result');
+        num.innerHTML=result_1
+    }
+    function getFirst(){
+        var first=document.getElementById("first").value;
+        return first;
+    }
+
+      function getTwice(){
+        var  twice=document.getElementById("twice").value;
+        return twice;
+    }
+</script>
