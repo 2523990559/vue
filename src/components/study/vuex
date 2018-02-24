@@ -1,0 +1,6 @@
+Vuex是什么？
+Vuex是一个专为vue.js应用程序开发的状态管理模式
+包含：
+state:驱动应用的数据源
+view:以声明方式将state映射到视图
+actions:响应在view上的用户输入导致的状态变化
