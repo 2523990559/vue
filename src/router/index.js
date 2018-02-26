@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/common/Home'
 import Date from '@/view/Date/index'
 import Search from '@/view/Search/index'
-
+import Login from '@/view/Login/index'
 Vue.use(Router)
 
 export default new Router({
@@ -25,7 +25,15 @@ export default new Router({
         meta: {
           activeName: '搜索'
         }
-      }
+      },
+      {
+        path: '/Login',
+        name: '登录测试页面',
+        component: Login,
+        meta: {
+          activeName: '登录测试页面'
+        }
+      },
     ]
   }]
 })

@@ -3,6 +3,9 @@
         <!-- on-select选择菜单Menu时候触发 -->
         <Menu :theme="color" :active-name="activeName" @on-select="change">
             <MenuGroup title="张阳日常练习" style='background:#495060;width: 242px;'>
+              <MenuItem name="登录测试页面">
+                登录测试页面
+                </MenuItem>
                 <MenuItem name="日期">
                 日期
                 </MenuItem>
