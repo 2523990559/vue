@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="hello" style="color:blue">
     <slot :cname="items[2].cname"></slot> 
     <slot :addr="items[2].addr"></slot> 
     <slot age="18"></slot> 

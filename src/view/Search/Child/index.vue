@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div :list="list">
+        <div :list="list"  style="color:red">
             <div>
                 <slot name="small">
                     <p> {{list[0].name}}</p>

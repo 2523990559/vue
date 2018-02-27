@@ -1,28 +1,8 @@
 <template>
   <div>
     这是子组件
-    <div>{{zyChild}}</div>
+    <div style="color:#f36">{{zyChild}}</div>
     <div>
-      <Row :gutter="24">
-        <Col span="8">
-        <div>
-          <Card>
-           <svg width="960" height="500"></svg>
-          </Card>
-        </div>
-        </Col>
-        <Col span="8">
-        <div>
-          <Card>ddd</Card>
-        </div>
-        </Col>
-        <Col span="8">
-        <div>
-          <Card>ddd</Card>
-        </div>
-        </Col>
-
-      </Row>
     </div>
   </div>
 </template>

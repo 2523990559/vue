@@ -1,5 +1,25 @@
 <template>
   <div>
+    <div style="margin:50px">
+      <Row>
+        <Col span="8">
+        <Menu>
+          <Menu active-name="1-2" :open-names="['1']" v-for="temp in data" :key="temp.label">
+            <Submenu name="1">
+              <template slot="title">
+                <Icon type="ios-filing"></Icon>
+                {{temp.label}}
+              </template>
+              <Submenu name="2">
+                <template slot="title">{{temp.children[0].label}}</template>
+                <MenuItem name="2-2">{{temp.children[0].children[0].label}}</MenuItem>
+              </Submenu>
+            </Submenu>
+          </Menu>
+        </Menu>
+        </Col>
+      </Row>
+    </div>
     <div style="background:#fff">
       <Row style="padding:10px" :gutter="24">
         <Col span="3">
@@ -49,6 +69,63 @@ export default {
       password: "",
       add: "vue.js",
       man: "男",
+      data: [
+        {
+          label: "一级 1",
+          children: [
+            {
+              label: "二级 1-1",
+              children: [
+                {
+                  label: "三级 1-1-1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          label: "一级 2",
+          children: [
+            {
+              label: "二级 2-1",
+              children: [
+                {
+                  label: "三级 2-1-1"
+                }
+              ]
+            },
+            {
+              label: "二级 2-2",
+              children: [
+                {
+                  label: "三级 2-2-1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          label: "一级 3",
+          children: [
+            {
+              label: "二级 3-1",
+              children: [
+                {
+                  label: "三级 3-1-1"
+                }
+              ]
+            },
+            {
+              label: "二级 3-2",
+              children: [
+                {
+                  label: "三级 3-2-1"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     };
   },
   mounted() {},
