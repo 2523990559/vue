@@ -11,7 +11,7 @@ export default new Router({
     path: '/',
     component: Home,
     children: [{
-        path: '/',
+        path: '/Date',
         name: '日期',
         component: Date,
         meta: {
@@ -27,7 +27,7 @@ export default new Router({
         }
       },
       {
-        path: '/Login',
+        path: '/',
         name: '登录测试页面',
         component: Login,
         meta: {
