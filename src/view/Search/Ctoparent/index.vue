@@ -13,6 +13,7 @@ export default {
     methods:{
         iclick(){
             this.$emit('ievent','我是子元素传过来的')
+            alert("我是子组件传递过来的！")
         }
     }
 }

@@ -12,6 +12,12 @@
                 <MenuItem name="搜索">
                 搜索
                 </MenuItem>
+                  <MenuItem name="数组练习">
+                数组练习
+                </MenuItem>
+                <MenuItem name="计算属性">
+                计算属性
+                </MenuItem>
             </MenuGroup>
         </Menu>
     </div>
