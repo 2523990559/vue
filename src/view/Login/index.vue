@@ -1,5 +1,10 @@
 <template>
     <div class="bg">
+      <div class="ceshi">测试z-index
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+      </div>
         <ul class="bg-bubbles">
             <li v-for="i in 10" :key="i"></li>
         </ul>
@@ -25,6 +30,30 @@
 export default {};
 </script>
 <style scoped lang="less">
+// .box1{
+//   background-color:#f36;
+//   width:200px;
+//   height:200px;
+//   z-index:-1;
+// }
+// .box2{
+//  background-color:#eee;
+//   width:150px;
+//   height:150px;
+//   z-index: 2;
+// }
+.ceshi{
+  position: relative;
+}
+.box3{
+  position: absolute;
+  left:0;
+  top:0;
+ background:#fff;
+  width:50px;
+  height:50px;
+  z-index: -1;
+}
 .bg {
   background: linear-gradient(to bottom right, #50a3a2, #53e3a6);
   height: 100%;
