@@ -1,5 +1,7 @@
 <template>
   <div>
+    <div class="full-model" ></div>
+    <div class="model-bg model"></div>
     <div style="margin:50px">
       <Row>
         <Col span="8">
@@ -65,6 +67,7 @@
 export default {
   data() {
     return {
+      showModel:true,
       name: "",
       password: "",
       add: "vue.js",
@@ -130,6 +133,7 @@ export default {
   },
   mounted() {},
   methods: {
+  
     change(event) {
       alert("Hello" + this.add + "!");
     },
@@ -139,4 +143,27 @@ export default {
   }
 };
 </script>
+<style>
+.full-model{
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:#000;
+  opacity:0.5;
+}
+.model-bg{
+  background:url(./images/redbag_model.png)no-repeat;
+  width: 494px;
+  height: 585px;
+}
+.model{
+position:fixed;
+z-index:999;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+}
+</style>
 

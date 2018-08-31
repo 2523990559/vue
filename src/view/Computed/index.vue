@@ -5,7 +5,7 @@
     <div class="bg">
         <div :class='"bg"+list' v-for="(list,index) in '123'" :key="index" >
     </div>
-  
+    <div ></div>
 
     </div>
   </div>
@@ -17,6 +17,7 @@ export default {
      startName:'zhang',
      endName:'yang',
      allName:'',
+     list:[1,2,3,4,5]
     }
   },
   mounted() {
